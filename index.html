@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 No Brasil</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/js/App.js">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/img/f1_logo.svg" alt="F1_logo">
+            </div>
+            
+            <h1>Fórmula 1</h1>
+            
+            <div class="navigation">
+                <nav>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Circuitos</a>
+                            <a href="#">Corredores</a>
+                            <a href="#">Scuderias</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="videoLoop">
+                <div class="video-content">
+                    <div class="inner">
+                      <h1>O que é <em>Fórmula 1</em>?</h1>
+                      <p>Acompanhe aqui as principais noticias e informações sobre os GPs</p>
+                      
+                      <a href="#">Saiba mais ></a>
+                    </div>
+                </div>
+
+                <video autoplay loop muted>
+                    <source src="/videos/ThisIsFormulaOne.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="hero">
+                <h2>New section</h2>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+                }
+            }
+            }
+        }
+    </script>
+
+</body>
+</html>
