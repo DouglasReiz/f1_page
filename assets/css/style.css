@@ -15,6 +15,10 @@ header .container{
     align-items: center;
 }
 
+header .container .logo{
+    width: 10%;
+}
+
 header .container .navigation{
     
     display: flex;
@@ -83,19 +87,17 @@ header .container .navigation{
     display:block;
 }
 
-header .container .logo{
-    width: 10%;
-}
+
 
 main .container .videoLoop .video-content {
-    z-index: 99999;
+    z-index: 99;
     position: absolute;
     height: 100%;
     width: 100%;
 }
 
 main .container .videoLoop video{
-    padding-top: 9rem;
+    padding-top: 10rem;
     min-width: 100%;
     min-height: 100%;
 }
@@ -110,7 +112,7 @@ main .container .videoLoop .video-content .inner {
     border-radius: 2rem;
 }
 
-main .container .videoLoop .video-content .inner h1 {
+main .container .videoLoop .video-content .inner h2 {
     font-size: 64px;
     text-transform: uppercase;
     color: #b70000;
