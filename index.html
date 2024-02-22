@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +12,20 @@
 
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/patterns.css">
+
 
 </head>
+
 <body>
     <header>
         <div class="container">
             <div class="logo">
                 <img src="/img/f1_logo.svg" alt="F1_logo">
             </div>
-            
+
             <h1>Fórmula 1</h1>
-            
+
             <div class="navigation">
                 <nav>
                     <div class="dropdown">
@@ -36,16 +40,16 @@
             </div>
         </div>
     </header>
-    
+
     <main>
         <div class="container">
             <div class="videoLoop">
                 <div class="video-content">
                     <div class="inner">
-                      <h2>O que é <em>Fórmula 1</em>?</h2>
-                      <p>Acompanhe aqui as principais noticias e informações sobre os GPs</p>
-                      
-                      <a href="#">Saiba mais ></a>
+                        <h2>O que é <em>Fórmula 1</em>?</h2>
+                        <p>Acompanhe aqui as principais noticias e informações sobre os GPs</p>
+
+                        <a href="#">Saiba mais ></a>
                     </div>
                 </div>
 
@@ -54,29 +58,123 @@
                 </video>
             </div>
         </div>
+
+
+        <section class="s-hero">
+            <div class="container">
+                <h2> Veja aqui os principais Circuitos </h2>
+
+            </div>
+        </section>
+
+        <div class="slideshow-container" id="meuItem">
+            <div class="slideshow fade">
+
+
+                <div class="numeracao">1 / 3</div>
+                <img src="img/bahraingp.png" alt="slide">
+                <div class="legenda">GP de Bahrain</div>
+            </div>
+            <div class="slideshow fade">
+
+                <div class="numeracao">2 / 3</div>
+                <img src="img/azerbaijan-gp.png" alt="Slide">
+                <div class="legenda">GP do Azerbaijão</div>
+            </div>
+            <div class="slideshow fade">
+
+                <div class="numeracao">3 / 3</div>
+                <img src="img/australian-gp.png" alt="Slide">
+                <div class="legenda">Gp da australia</div>
+            </div>
+            <div class="slideshow fade">
+
+                <div class="numeracao">4 / 3</div>
+                <img src="img/japan-gp.png" alt="Slide">
+                <div class="legenda">Gp da Japão</div>
+            </div>
+            <div class="slideshow fade">
+
+                <div class="numeracao">5 / 3</div>
+                <img src="img/china-gp.png" alt="Slide">
+                <div class="legenda">Gp da Japão</div>
+            </div>
+            <div class="slideshow fade">
+
+                <div class="numeracao">6 / 3</div>
+                <img src="img/italy-gp.png" alt="Slide">
+                <div class="legenda">Gp da Japão</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <div class="paginacao">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+
+
+        <footer>
+            <div class="footer">
+                <div class="row">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+
+                <div class="row">
+                    <ul>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By: Mahesh
+                </div>
+            </div>
+        </footer>
+
+
+
+
     </main>
-    
+
     <script>
         /* When the user clicks on the button,
         toggle between hiding and showing the dropdown content */
         function myButton() {
             document.getElementById("myDropdown").classList.toggle("show");
         }
-        
+
         // Close the dropdown menu if the user clicks outside of it
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
                 }
-            }
             }
         }
     </script>
 
+    <script src="./assets/js/App.js"></script>
+
+
 </body>
+
 </html>

@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,24 +7,24 @@
     font-family: "Share Tech Mono", sans-serif;
 }
 
-html{
-    font-size:62.5%;
+html {
+    font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-size: 1.6rem;
     -webkit-font-smoothing: antialiased;
     background-color: #fff;
 }
 
-img{
+img {
     max-width: 100%;
     display: block;
 }
 
-button{
+button {
     border: none;
-    outline:none;
+    outline: none;
     cursor: pointer;
 }

@@ -1,5 +1,5 @@
 /* HEADER*/
-header{
+header {
     position: absolute;
     top: 0;
     left: 0;
@@ -9,22 +9,42 @@ header{
     background-color: #950000;
 }
 
-header .container{
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .container .logo{
+header .container .logo {
     width: 10%;
 }
 
-header .container .navigation{
-    
+header .container .navigation {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2rem 2rem;
+}
+
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #000000;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #950000;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 0.1rem outset rgba(255, 166, 0, 0);
+    /* creates padding around scroll thumb */
 }
 
 /* Dropdown Button */
@@ -40,7 +60,7 @@ header .container .navigation{
 }
 
 /* Dropdown button on hover & focus */
-.dropbtn:hover{
+.dropbtn:hover {
     background-color: #950000d1;
     border: solid;
     border-color: #000000;
@@ -63,7 +83,7 @@ header .container .navigation{
     border-radius: 1rem;
     background-color: #950000;
     min-width: 0.2rem;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     margin-top: 1rem;
 }
@@ -84,7 +104,7 @@ header .container .navigation{
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
-    display:block;
+    display: block;
 }
 
 
@@ -96,7 +116,7 @@ main .container .videoLoop .video-content {
     width: 100%;
 }
 
-main .container .videoLoop video{
+main .container .videoLoop video {
     padding-top: 10rem;
     min-width: 100%;
     min-height: 100%;
@@ -116,21 +136,19 @@ main .container .videoLoop .video-content .inner h2 {
     font-size: 64px;
     text-transform: uppercase;
     color: #b70000;
-    background-color: #0000009c;
     letter-spacing: 2px;
     font-weight: 500;
     text-align: center;
 }
 
 main .container .videoLoop .video-content .inner em {
-    color: rgb(255, 255, 0);
+    color: #FFFF00;
     font-style: normal;
     font-weight: 200;
 }
 
 main .container .videoLoop .video-content .inner p {
     color: #fe0000;
-    background-color: #0000009c;
     font-size: 22px;
     font-weight: 200;
     letter-spacing: 1.5px;
@@ -139,10 +157,214 @@ main .container .videoLoop .video-content .inner p {
     margin-top: 1rem;
 }
 
-main .container .videoLoop .video-content .inner a{
+main .container .videoLoop .video-content .inner a {
     color: yellow;
     background-color: #950000;
     border-radius: 3rem;
     padding: 2rem;
     margin-top: 1rem;
+}
+
+main .s-hero .container {
+    display: block;
+    text-align: center;
+    padding-top: 2rem;
+    color: #fe0000;
+}
+
+.slideshow-container {
+
+    width: 50%;
+    position: relative;
+    margin: auto;
+
+}
+
+.slideshow {
+    display: none;
+}
+
+
+.slideshow img {
+    width: 100%;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.legenda {
+
+    width: auto;
+    color: #fdfdfd;
+    font-size: 0.9em;
+    padding: 5px;
+    position: absolute;
+    bottom: 18%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    left: 10%;
+
+}
+
+.numeracao {
+
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+
+}
+
+.paginacao {
+
+    width: 100%;
+    float: left;
+    margin: 10px 0;
+    text-align: center;
+
+}
+
+.dot {
+
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 4px;
+    border-radius: 50px;
+    background-color: #007cff;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.ativo,
+.dot:hover {
+    background-color: #242424;
+}
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.footer {
+    background: #000;
+    padding: 30px 0px;
+    margin-top: 7rem;
+    text-align: center;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8em;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: #fff;
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+/*720PX BREAKPOINT - Ajustando o texto para desktop*/
+@media (max-width:720px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+
+    .footer .row a i {
+        margin: 0% 3%;
+    }
+}
+
+/*960PX BREAKPOINT - Ajustando o texto para desktop*/
+@media (min-width:60em) {
+
+
+    .legenda {
+        font-size: 2em;
+        padding: 8px;
+    }
+
+    .paginacao {
+        margin: 20px 0;
+    }
+
+    .dot {
+        width: 18px;
+        height: 18px;
+    }
 }
